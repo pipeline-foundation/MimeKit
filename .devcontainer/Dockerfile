@@ -6,3 +6,5 @@ RUN sudo apt install gnupg ca-certificates && \
 	echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list && \
 	sudo apt update && \
 	sudo apt install -y mono-complete
+
+# Built with ❤ by [Pipeline Foundation](https://pipeline.foundation)

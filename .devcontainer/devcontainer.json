@@ -18,8 +18,10 @@
 		"vscode-icons-team.vscode-icons",
 		"editorconfig.editorconfig"
 	],
-	"postCreateCommand": "msbuild MimeKit.sln -p:Configuration=Release -p:Platform='Any CPU' -p:MonoRuntime=true -t:restore,build && dotnet test 'UnitTests/bin/Release/net48/UnitTests.dll'",
+	"postCreateCommand": "dotnet restore MimeKit.sln && msbuild MimeKit.sln -p:Configuration=Release -p:Platform='Any CPU' -p:MonoRuntime=true && dotnet test 'UnitTests/bin/Release/net48/UnitTests.dll'",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
 }
+
+// Built with ❤ by [Pipeline Foundation](https://pipeline.foundation)
